@@ -15,6 +15,6 @@
 #define TIMEOUT 3
 #define PACKET_SIZE 64
 
-void trace_route(const char *destination);
+void trace_route(const char *destination, int max_hops, int timeout, const char *interface);
 
 unsigned short checksum(void *b, int len);
